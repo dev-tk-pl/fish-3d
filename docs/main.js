@@ -41,7 +41,6 @@ function init() {
     scene.add(light.target);
   }
 
-
   const mtlLoader = new MTLLoader();
 
   mtlLoader.load('assets/Karas.mtl', function (materials) {
