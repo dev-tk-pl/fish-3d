@@ -55,7 +55,7 @@ function init() {
 
     const objLoader = new OBJLoader2(manager)
     objLoader.addMaterials(materials);
-    objLoader.load('https://www.dropbox.com/home/obj?preview=Karas-Ster.OBJ', function (object) {      
+    objLoader.load('assets/Karas.obj', function (object) {      
       const texture = new THREE.TextureLoader().load('assets/Karas.jpg');
       object.traverse(function (child) {   // aka setTexture
         if (child instanceof THREE.Mesh) {
